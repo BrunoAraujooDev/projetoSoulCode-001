@@ -1,12 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>MapaPaginaSite</title>
+    <link rel="stylesheet" href="mapa.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav>
+            <a id="format" href="">format</a>
+            <a id="gallery" href="">gallery</a>
+            <a id="review" href="">review</a>
+            <a id="contact" href="">contact</a>
+        </nav>
+        <img id="imagem" src="principal.png" alt="Woman exercising.">
+        
+    </header>
+    <main>
+        <div id="map_form">
+            <section id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48380.614491539454!2d-74.03113222089843!3d40.722674300000044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f3597444d%3A0x235a85560800e250!2sGYM%20NYC!5e0!3m2!1spt-BR!2sbr!4v1644326534802!5m2!1spt-BR!2sbr"
+                    width="425" height="308" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- height do figma é 77% do width -->
+            </section>
+
+            <section id="form">
+                <form action="">
+                    <p id="questions"><b>Have questions?</b> Leave a request and we will call within 10 minutes.</p>
+                    <input type="text" placeholder="Name" id="name" required>
+                    <br><br>
+                    <input type="text" placeholder="Phone Number" id="phone" required>
+                    <br><br>
+                    <button id="send" type="submit">SEND</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>8 495 646-56-45</p>
+            <p>info@free-fitness.ru</p>
+        </div>
+        <nav>
+            <a href="">format</a>
+            <a href="">gallery</a>
+            <a href="">review</a>
+            <a href="">contact</a>
+        </nav>
+    </footer>
 </body>
+
 </html>
