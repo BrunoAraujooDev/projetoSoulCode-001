@@ -1,0 +1,91 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+/* zerando as configurações padrão do browser */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+/* 1. cabeçalho */
+
+/* 1.2 fundo do cabeçalho */
+header{
+    width: 100vw;
+    height: 807px;
+    background-image: url("/src/img/indexImg.svg");
+    background-color: #333740;
+    background-repeat: no-repeat;
+    background-size: 89%;
+    background-position: right 80%;
+}
+
+/* 2. navbar */
+
+nav{
+    width: 30vw;
+    height: 18px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: large;
+}
+
+/* 2.1 links menu */
+
+a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* 3. textos principais título e paragrafo*/
+
+main{
+    height: 10vw;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: x-large;
+}
+
+/* 4. Div e seus Cards */
+
+/* Div container para os cards */
+
+.container{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 4.2 Card e seus itens*/
+.container-card{
+    width: 300px;
+    height: 500px;
+    background-color: #E5E5E5;
+    box-shadow: 0 5px 20px;
+}
+
+/* imagem */
+img{
+    width: 100%;
+}
+
+/* texto */
+.container-card-text{
+    text-align: left;
+    padding: 10px 0 0 30px;
+}
+
+/* rodape */
+.container-card-rodape{
+    display: flex;
+    padding: 10px 0 0 30px;
+}
