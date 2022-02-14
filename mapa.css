@@ -35,7 +35,7 @@ body {
 
 header {
     background-image: url(src/principal.png);
-    background-size: 55% 100%;
+    background-size: 110vh 100%;
     background-repeat: no-repeat;
     grid-area: header;
     background-position: right;
@@ -43,6 +43,7 @@ header {
 }
 
 .headerflex {
+
     position: relative;
     width: 100%;
     height: 7vh;
@@ -83,6 +84,9 @@ a {
 
 }
 
+main, footer {
+    background-color: white;
+}
 /*--------------------------------------------------------------------------------------------*/
 #map_form {
     height: 100%;
@@ -91,17 +95,14 @@ a {
     grid-area: main;
 }
 
-#map {
+#map{
     width: 50%;
     height: 100%;
-    background-color: white;
-
 }
 
 #form {
     width: 50%;
     height: 100%;
-    background-color: white;
 }
 
 #questions {
@@ -169,8 +170,6 @@ main {
 footer {
     grid-area: footer;
     width: 100%;
-    background-color: white;
-    grid-area: footer;
     font-size: large;
 
 }
