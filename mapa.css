@@ -20,7 +20,7 @@ body {
     max-width: 100%;
     max-height: 100%;
     display: grid;
-    grid-template-rows: 70vh 60vh 20vh;
+    grid-template-rows: 100vh 60vh 20vh;
     grid-template-columns: 100%;
     grid-template-areas:
         'header'
@@ -30,14 +30,17 @@ body {
 
 /* ----------------------------- Header -----------------------------------------------------------*/
 body {
-    background-image: radial-gradient(#5e626d, #333740)
+    background-image: radial-gradient(#5e626d, #333740);
+    margin: 0;
 }
 
 header {
     background-image: url(src/principal.png);
-    background-size: 110vh 100%;
+    background-size: 150vh 100vh;
     background-repeat: no-repeat;
+    /* pode excluir a linha abaixo se você não estiver usando grid */
     grid-area: header;
+    /* ------------------------------ */
     background-position: right;
     font-size: 4vh;
 }
@@ -50,7 +53,7 @@ header {
     display: flex;
     flex-direction: row;
     top: 6%;
-    left: 2%;
+    left: 2.6%;
 
 
 }
@@ -87,6 +90,7 @@ a {
 main, footer {
     background-color: white;
 }
+
 /*--------------------------------------------------------------------------------------------*/
 #map_form {
     height: 100%;
@@ -95,7 +99,7 @@ main, footer {
     grid-area: main;
 }
 
-#map{
+#map {
     width: 50%;
     height: 100%;
 }
