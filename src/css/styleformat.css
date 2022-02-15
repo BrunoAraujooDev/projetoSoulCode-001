@@ -12,46 +12,65 @@
 
 /* 1. cabeçalho */
 
-/* 1.2 fundo do cabeçalho */
-header{
-    width: 100vw;
+header {
     height: 807px;
-    background-image: url("/src/img/indexImg.svg");
+    background-image: url("../img/indexImg.svg");
     background-color: #333740;
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-size: 89%;
-    background-position: right 80%;
+    background-position: right;
+    font-size: 4vh;
 }
 
-/* 2. navbar */
-
-nav{
-    width: 30vw;
-    height: 18px;
+.headerflex {
+    
+    /* position: relative; */
+    /* height: 7vh; */
     display: flex;
-    justify-content: space-around;
+    /* flex-direction: row; */
     padding-top: 50px;
     padding-left: 50px;
-    font-size: large;
+    align-items: center;
+    
 }
 
-/* 2.1 links menu */
-
-a{
-    text-decoration: none;
+.logo {
+    /* text-align: center; */
     color: white;
-    cursor: pointer;
+    height: 4vw;
+    background-color: #FF5933;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 8px;
 }
+
+a {
+    text-decoration: none;
+
+}
+
+.a-header {
+    color: rgba(255, 255, 255, 0.88);
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+#nav-header {
+    /* margin-left: 1%; */
+    width: 100%;
+    /* position: relative; */
+
+}
+
+
 
 /* 3. textos principais título e paragrafo*/
 
 main{
     height: 10vw;
     margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     font-size: x-large;
 }
 
@@ -60,7 +79,7 @@ main{
 /* Div container para os cards */
 
 .container{
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
 }
@@ -68,7 +87,7 @@ main{
 /* 4.2 Card e seus itens*/
 .container-card{
     width: 300px;
-    height: 500px;
+    height: 470px;
     background-color: #E5E5E5;
     box-shadow: 0 5px 20px;
 }
@@ -81,11 +100,67 @@ img{
 /* texto */
 .container-card-text{
     text-align: left;
-    padding: 10px 0 0 30px;
+    padding: 10px 0 0 25px;
+    font-size: large;
+    line-height: 1;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+h2{
+    color:  #ff5933;
+}
+
 
 /* rodape */
 .container-card-rodape{
     display: flex;
     padding: 10px 0 0 30px;
+}
+
+/* Botões */
+
+button{
+    width: 250px;
+    height: 35px;
+    background-color: #ff5933;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-weight: 900;
+}
+
+
+/* 5. Rodapé */
+
+footer{
+    height: 111px;
+    margin: 80px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: xx-large;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.menu-rodape{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+}
+
+.menu-rodape a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: x-large;
 }

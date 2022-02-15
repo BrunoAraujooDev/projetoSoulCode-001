@@ -4,63 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/src/css/styleformat.css">
+    <title>Format</title>
 </head>
 <body>
     
+    <!-- cabeçalho do site com navbar, fundo e img -->
+
     <header>
-        <nav>
-            <a href="">    
-            </a>
-            <a href="">    
-            </a>
-            <a href="">    
-            </a>
-            <a href="">    
-            </a>
-        </nav>
+        <div class="headerflex">
+            <div class="logo">SoulGym</div>
+            <nav id="nav-header">
+                <a id="format" href="format.html" class="a-header">Home</a>
+                <a id="gallery" href="" class="a-header">Planos</a>
+                <a id="review" href="mapa.html" class="a-header">Localização</a>
+            </nav>
+        </div>
     </header>
 
-    <div>
-        <main>
-            <h1></h1>
+
+    <!-- conteúdo principal h1, p , main com cards -->
+    <main>
+        <h1>PLANOS</h1>
+        
+        <p>Temos vários planos para todos os tipos de clientes. Com certeza temos um que se encaixa no seu bolso!</p>
+    </main>
     
-            <p></p>
-        </main>
-    
-            <section>
-                <img src="" alt="">
-    
-                <h2></h2>
-                <p></p>
-    
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                
-                <div>
-                    <p></p>
-                    <button></button>
+    <div class="container">
+        <section class="container-card">
+                <img src="./src/img/imgBox-1.svg" alt="homem batendo corda">
+
+                <div class="container-card-text">
+
+                    <div>
+                        <h2>FLEX</h2>
+                        <p>R$ 49,90/mês</p>
+                    </div>
+        
+                    <ul type="none">
+                        <li>Musculação</li>
+                        <li>Aeróbico</li>
+                        <li>Ciclismo</li>
+                        <li>Kit treino</li>
+                    </ul>     
+                    <button>Adquirir</button>
                 </div>
-            </section>    
+        </section>    
+        <section class="container-card">
+                <img src="./src/img/imgBox-2.svg" alt="homem batendo corda">
+
+                <div class="container-card-text">
+
+                    <div>
+                        <h2>PLUS</h2>
+                        <p>R$ 99,90/mês</p>
+                    </div>
+        
+                    <ul type="none">
+                        <li>Musculação</li>
+                        <li>Aeróbico</li>
+                        <li>Ciclismo</li>
+                        <li>Aulas de Dança/Zumba</li>
+                        <li>Kit treino</li>
+                    </ul>
+                    
+                    <button>Adquirir</button>
+                </div>    
+        </section>    
+        <section class="container-card">
+                <img src="./src/img/imgBox-3.svg" alt="homem batendo corda">
+    
+                <div class="container-card-text">
+
+                    <div>
+                        <h2>PRO</h2>
+                        <p>R$ 149,90/mês</p>
+                    </div>
+        
+                    <ul type="none">
+                        <li>Musculação</li>
+                        <li>Aeróbico</li>
+                        <li>Ciclismo</li>
+                        <li>Aulas de Dança/Zumba</li>
+                        <li>Nutricionista</li>
+                        <li>Treinos personalizados</li>
+                        <li>Kit treino</li>
+                    </ul>    
+                    <button id="butoonThree">Adquirir</button>
+                </div>
+        </section>    
     </div>
     
-
+    <!-- rodapé com contato e navbar -->
     <footer>
         <div>
-            <p></p>
+            <p> <strong>8 495 646-56-45</strong> </p>
         
-            <p></p>    
+            <p>servicos@soulgym.com</p>    
         </div>
 
-        <nav>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <nav class="menu-rodape">
+            <a href="#format">Format</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
         </nav>
     </footer>
 </body>
