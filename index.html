@@ -7,17 +7,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./src/css/index.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav id="nav-home">
-            <a class="header-a" href="./index.html">Home</a>
-            <a class="header-a" href="./format.html">Planos</a>
-            <a class="header-a" href="./mapa.html">Localização</a>
-        </nav>
-        <img src="./img/imgIndex.svg" alt="Mulher levantando peso" id="header-img"/>
+        <div class="headerflex">
+            <div class="logo">SoulGym</div>
+            <nav id="nav-header">
+                <a id="format" href="index.html" class="a-header">Home</a>
+                <a id="gallery" href="format.html" class="a-header">Planos</a>
+                <a id="review" href="mapa.html" class="a-header">Localização</a>
+            </nav>
+        </div>
     </header>
     <main id="main-home">
         <section id="section-principal">
@@ -29,7 +31,7 @@
             </p>
         </section>
         <figure>
-            <img id="main-img" src="./img/imgBoxBig-2.png" alt="Homem levantando peso" />
+            <img id="main-img" src="./src/img/imgBoxBig-2.png" alt="Homem levantando peso" />
         </figure>
     </main>
     <footer id="footer-home">

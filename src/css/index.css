@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #333740; */
+    background-image: radial-gradient(#5e626d, #333740);
+    font-family: 'Hind', sans-serif;
+    height: 200vh;
+}
+
+ /* Header da Bruna */
+
+header {
+    background-image: url("../img/indexImg.svg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    font-size: 4vh;
+    height: 100vh;
+}
+
+header:hover {
+    animation: carrosselHeader 30s infinite;
+}
+        
+@keyframes carrosselHeader {
+    0% {
+        background-image: url("../img/indexImg.svg");
+    }
+    25% {
+        background-image: url("../img/anastase-maragos-7kEpUPB8vNk-unsplash.jpg");
+    }
+    50% {
+        background-image: url("../img/anastase-maragos-9dzWZQWZMdE-unsplash.jpg");
+    }
+    75% {
+        background-image: url("../img/cathy-pham-3jAN9InapQI-unsplash.jpg");
+    }
+    100% {
+        background-image: url("../img/luis-vidal-FodEsaNZs48-unsplash.jpg");
+    }
+}
+
+.headerflex {
+
+    position: relative;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    top: 6%;
+    left: 2.6%;
+
+
+}
+
+.logo {
+    text-align: center;
+    color: white;
+    width: 22vh;
+    height: 3vw;
+    background-color: #FF5933;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.a-header {
+    color: rgba(255, 255, 255, 0.88);
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+#nav-header {
+    margin-left: 1%;
+    width: 100%;
+    position: relative;
+
+}
+
+/* header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-home {
+    width: 500px;
+    height: 18px;
+    margin: 2rem;
+    font-size: 1.1rem;
+
+}
+
+.header-a  {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.88);
+    margin-left: 2rem;
+}
+
+.header-a:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255); 
+}
+
+#header-img {
+    height: inherit;
+} */
+
+ /* Conteúdo principal */
+
+#main-home {
+    display: flex;
+    min-height: 50vh;
+}
+
+#section-principal {
+    background-color: white;
+    color: #000;
+    padding: 2rem 4rem;
+    width: 50%;
+    max-height: inherit;
+
+}
+
+#section-principal > h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0 0 1rem 0;
+}
+
+#section-principal > p {
+    text-align: justify;
+
+
+}
+
+ main > figure {
+    width: 50%; 
+    max-height: 50vh;
+
+}
+
+#main-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Footer da página  */
+
+#footer-home {
+    padding: 35px 92px;
+    background-color: white;
+    width: 100%;
+    max-height: 25vh;
+
+}
+
+.div-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.div-footer > p:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.div-footer > p:nth-child(2) {
+    text-decoration: underline;
+    text-align: justify;
+}
+
+#footer-nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+#footer-nav > a {
+    text-decoration: none;
+    color: #000;
+}
+
+#footer-nav > a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 849px){
+
+    #main-home {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section-principal {
+        min-height: 400px;
+        width: 100%;
+    }
+
+    main > figure {
+        width: 100%;    
+    }
+
+
+    .div-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .div-footer > p:nth-child(1) {
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    #footer-nav > a {
+        margin-left: 1.5rem;
+    }
+
+
+
+}
+
+
