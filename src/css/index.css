@@ -58,11 +58,12 @@ header {
 .logo {
     text-align: center;
     color: white;
-    max-width: 22vh;
+    max-width: 11rem;
     max-height: 100%;
     background-color: #FF5933;
     border-radius: 5px;
     font-weight: 700;
+    padding: 5px 12px;
 }
 
 a {
