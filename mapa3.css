@@ -1,0 +1,144 @@
+@media (min-width: 500px) and (max-width: 1000px) {
+    html, body {
+
+        overflow: auto;
+    }
+
+    body {
+        background-image: radial-gradient(#5e626d, #333740);
+        /* cor mais clara de antes: #5e626d; */
+        margin: 0;
+        width: 100%;
+        height: 105vh;
+
+    }
+
+    * {
+        font-size: x-large;
+
+    }
+
+/*----------------------------------------grid------------------------------------------------------*/
+    
+    .grid {
+        overflow: hidden;
+        box-shadow: none;
+        margin: 0;
+        width: 100%;
+        height: 105vh;
+        display: grid;
+        grid-template-rows: 50vh 40vh 15vh;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            'header'
+            'main'
+            'footer';
+
+    }
+
+   /*----------------------------------------HEADER------------------------------------------------------ */
+    header{
+        background-size: 100% 100%;
+        height: 100%;       
+    }
+
+    #nav-header {
+        position: relative;
+        top: 6%;
+        left: 4%;
+        height: 100%;
+
+    }
+
+    .a-header {
+        font-size: 3.5vw;
+        color: rgba(255, 255, 255, 0.88);
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .headerflex {
+        width: 50%;
+        height: 7vh;
+        position: relative;
+        display: flex;
+        top: 3%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        left: 2%;
+    }
+    .logo {
+        position: relative;
+        left: -4%;
+        text-align: center;
+        color: white;
+        width: 40%; 
+        height: 60%;
+        background-color: #FF5933;
+        border-radius: 5px;
+        font-weight: 700;
+        
+    }
+    /* --------------------------------------MAIN------------------------------------------------------- */
+    #form-flex {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    #questions {
+        font-size: 2.5vw;
+        width: 80%;
+        margin: auto;
+    }
+
+    input {
+        margin: -1vh;
+        height: 3.5vh;
+        width: 35vw;
+        border-radius: 6px;
+        margin: 1vh auto;
+    }
+
+    ::placeholder {
+        padding-left: 2%;
+        font-size: 3vw;
+    }
+
+    input+input {
+        margin-bottom: 0
+    }
+
+    button {
+        position: unset;
+        height: 5vh;
+        width: 22vw;
+        font-size: 3vw;
+
+    }
+    /* --------------------------------------FOOTER------------------------------------------------------- */
+
+    #telephone {
+        font-size: 4vw;
+        font-weight: 1000;
+        margin-bottom: 1vh;
+    }
+    #email {font-size: 4vw;
+
+    }
+
+    #footer-info {
+        display: flex;
+        width: 100%;
+        height: 50%;
+        justify-content: space-around;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    }
