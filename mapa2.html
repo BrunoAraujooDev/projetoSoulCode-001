@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/mapa2.css">
+    <title>Localização</title>
+</head>
+<body>
+
+    <header>
+        <div class="headerflex">
+            <div class="logo">SoulGym</div>
+            <nav id="nav-header">
+                <a id="format" href="format.html" class="a-header">Home</a>
+                <a id="gallery" href="" class="a-header">Planos</a>
+                <a id="review" href="mapa.html" class="a-header">Localização</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48380.614491539454!2d-74.03113222089843!3d40.722674300000044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f3597444d%3A0x235a85560800e250!2sGYM%20NYC!5e0!3m2!1spt-BR!2sbr!4v1644326534802!5m2!1spt-BR!2sbr"
+            width="70%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <section>
+            <form action="post" id="form">
+                <h2>Alguma dúvida? Envie para nossa central de atendimento 24h/dia</h2>
+                    <input type="text" name="nome" id="nome" placeholder="Name">
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="8"></textarea placeholder="Digite sua mensagem" >
+                    <button type="submit" onclick="enviar()">SEND</button>    
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            <p> <strong>8 495 646-56-45</strong> </p>
+            
+            <p>servicos@soulgym.com</p>    
+        </div>
+        
+        <nav class="menu-rodape">
+            <a id="format" href="index.html">Home</a>
+            <a id="gallery" href="format.html">Planos</a>
+            <a id="review" href="mapa2.html">Localização</a>
+        </nav>
+    </footer>
+
+    <script src="/src/js/mapa.js"></script>
+</body>
+</html>
