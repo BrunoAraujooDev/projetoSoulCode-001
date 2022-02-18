@@ -68,8 +68,7 @@ a {
 /* 3. textos principais título e paragrafo*/
 
 main{
-    height: 10vw;
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
     font-size: x-large;
 }
@@ -145,7 +144,7 @@ footer{
     font-size: xx-large;
 }
 
-footer div{
+footer > div{
     display: flex;
     justify-content: space-between;
     width: 50vw;
@@ -163,4 +162,46 @@ footer div{
     color: black;
     cursor: pointer;
     font-size: x-large;
+}
+
+@media screen and (max-width: 849px) {
+    header {
+        height: 300px;
+    }
+
+    .headerflex {
+        flex-direction: column;
+        padding-left: unset;
+    }
+
+    #nav-header {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 32px;
+    }
+
+    footer > div{
+        display: block;
+        width: 100%;
+        padding: 16px;
+    }
+
+    footer{
+        font-size: x-large;
+    }
+
+    footer > div > p{
+        display: flex;
+        justify-content: center;
+    }
+    .menu-rodape {
+        width: 100%;
+    }
+    .menu-rodape > a {
+        font-size: large;
+    }
 }
