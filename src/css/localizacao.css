@@ -1,0 +1,54 @@
+/* 2. Main */
+
+main{
+    /* width: 100vw; */
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;    
+}
+
+/* 2.2 form */
+
+#form{
+    padding: 83px 60px 0px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#form h2{
+    font-size: x-large;
+    margin-bottom: 25px;
+    word-spacing: 3px;
+}
+
+#nome{
+    border: 2px solid rgba(0, 0, 0, 0.56);;
+    height: 40px;
+    border-radius: 8px;
+    padding: 20px ;
+}
+
+#mensagem{
+    border: 2px solid rgba(0, 0, 0, 0.56);;
+    border-radius: 8px;
+    resize: none;
+    
+}
+
+button{
+    width: 120px;
+    height: 25px;
+    font-size: large;
+    background-color: #FF5933;
+    color: white;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
