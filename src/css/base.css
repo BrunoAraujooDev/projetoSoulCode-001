@@ -1,0 +1,16 @@
+/* imports */
+@import url(./_variaveis.css);
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+/* zerando as configurações padrão do browser */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+    scroll-behavior: smooth;
+}
+
+ol, ul {
+	list-style: none;}

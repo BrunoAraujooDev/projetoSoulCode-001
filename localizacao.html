@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./src/css/base.css">
         <link rel="stylesheet" href="./src/css/header.css">
-        <link rel="stylesheet" href="./src/css/index.css">
+        <link rel="stylesheet" href="./src/css/localizacao.css">
         <link rel="stylesheet" href="./src/css/footer.css">
         <link rel="shortcut icon" type="imagex/png" href="./src/img/soulgym_icon.png">
-        <title>SoulGym - Home</title>
+        <title>SoulGym - Localização</title>
     </head>
     <body>
         <header>
@@ -18,9 +18,9 @@
                     <div class="headerflex">
                         <div class="logo">SoulGym</div>
                         <nav id="nav-header">
-                            <a class="a-header" href="">Home</a>
+                            <a class="a-header" href="index.html">Home</a>
                             <a class="a-header two" href="planos.html">Planos</a>
-                            <a class="a-header three" href="localizacao.html">Localização</a>
+                            <a class="a-header three" href="">Localização</a>
                             <hr>
                         </nav>
                         <div class="carousel__indicadores" data-navegacao>
@@ -65,20 +65,20 @@
             </div>
         </header>
 
-        <main id="main-home">
-            <section id="section-principal">
-                <h1>
-                    SOBRE
-                </h1>
-                <p>
-                    A SoulGym é uma rede de academias nacional espalhada por todos os estados da Federação. Fundada em 1997, a SoulGym se iniciou na cidade de São José dos Campos, em São Paulo. Atualmente, em 2022, chegamos à marca de mais de 100 mil alunos espalhados em todo o país. Desde são Paulo até Bahia, estamos presentes em todo o território nacional.
-                </p>
+        <main>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48380.614491539454!2d-74.03113222089843!3d40.722674300000044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f3597444d%3A0x235a85560800e250!2sGYM%20NYC!5e0!3m2!1spt-BR!2sbr!4v1644326534802!5m2!1spt-BR!2sbr"
+                width="70%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <section>
+                <form action="post" id="form">
+                    <h2>Alguma dúvida? Envie para nossa central de atendimento 24h/dia</h2>
+                        <input type="text" name="nome" id="nome" placeholder="Name">
+                        <textarea name="mensagem" id="mensagem" cols="40" rows="8"></textarea placeholder="Digite sua mensagem" >
+                        <button type="submit" onclick="enviar()">SEND</button>    
+                </form>
             </section>
-            <figure>
-                <img id="main-img" src="./src/img/imgBoxBig-2.png" alt="Homem levantando peso" />
-            </figure>
         </main>
-
+        
         <footer>
             <div>
                 <p> <strong>8 495 646-56-45</strong> </p>
@@ -93,6 +93,7 @@
             </nav>
         </footer>
 
+        <script src="/src/js/mapa.js"></script>
         <script src="./src/js/carrossel.js"></script>
         <script src="./src/js/flecha.js"></script>
     </body>
