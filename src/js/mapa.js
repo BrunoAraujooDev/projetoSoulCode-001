@@ -2,6 +2,7 @@ const formulario = document.getElementById("form");
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
+    e.stopPropagation();
 
     const valores = {
         nome: formulario['nome'].value,
