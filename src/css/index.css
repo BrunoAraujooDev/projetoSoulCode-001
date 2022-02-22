@@ -1,11 +1,11 @@
  /* Conteúdo principal */
 
-#main-home {
+.main-home {
     display: flex;
     min-height: 50vh;
 }
 
-#section-principal {
+.section-principal {
     background-color: white;
     color: #000;
     padding: 2rem 4rem;
@@ -14,83 +14,25 @@
 
 }
 
-#section-principal > h1 {
+.section-principal > h1 {
     font-weight: bold;
     font-size: 48px;
     margin: 0 0 1rem 0;
 }
 
-#section-principal > p {
+.section-principal > p {
     text-align: justify;
 
 
 }
 
- main > figure {
+.main-home > figure {
     width: 50%; 
     min-height: 100%;
     background-color: black;
 }
 
-#main-img {
+.main-img {
     width: 100%;
     min-height: 100%;
 }
-
-
-@media screen and (max-width: 849px){
-
-    .headerflex {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    #nav-header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #main-home {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #section-principal {
-        min-height: 400px;
-        width: 100%;
-    }
-
-    main > figure {
-        width: 100%; 
-        height: 500px; 
-    }
-
-    #main-img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-
-    .div-footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .div-footer > p:nth-child(1) {
-        font-weight: 700;
-        font-size: 1.1rem;
-        margin-bottom: 5px;
-    }
-
-    #footer-nav > a {
-        margin-left: 1.5rem;
-    }
-
-
-
-}
-
-

@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./src/css/header.css">
         <link rel="stylesheet" href="./src/css/planos.css">
         <link rel="stylesheet" href="./src/css/footer.css">
+        <link rel="stylesheet" href="./src/css/responsividade.css">
         <link rel="shortcut icon" type="imagex/png" href="./src/img/soulgym_icon.png">
         <title>SoulGym - Planos</title>
     </head>
@@ -66,77 +67,79 @@
         </header>
 
 
-        <!-- conteúdo principal h1, p , main com cards -->
-        <main>
-            <h1>PLANOS</h1>
+        <div class="flex_planos">
+            <main class="planos">
+                <h1>PLANOS</h1>
+                
+                <p>Temos vários planos para todos os tipos de clientes. Com certeza temos um que se encaixa no seu bolso!</p>
+            </main>
             
-            <p>Temos vários planos para todos os tipos de clientes. Com certeza temos um que se encaixa no seu bolso!</p>
-        </main>
-        
-        <div class="container">
-            <section class="container-card">
-                    <img src="./src/img/imgBox-1.png" alt="homem batendo corda">
+            <div class="container">
+                <section class="container-card">
+                        <img src="./src/img/imgBox-1.png" alt="homem batendo corda">
 
-                    <div class="container-card-text">
+                        <div class="container-card-text">
 
-                        <div>
-                            <h2>FLEX</h2>
-                            <p>R$ 49,90/mês</p>
+                            <div>
+                                <h2>FLEX</h2>
+                                <p>R$ 49,90/mês</p>
+                            </div>
+                
+                            <ul type="none">
+                                <li>Musculação</li>
+                                <li>Aeróbico</li>
+                                <li>Ciclismo</li>
+                                <li>Kit treino</li>
+                            </ul>     
+                            <button>Adquirir</button>
                         </div>
+                </section>    
+                <section class="container-card">
+                        <img src="./src/img/imgBox-2.png" alt="homem batendo corda">
+
+                        <div class="container-card-text">
+
+                            <div>
+                                <h2>PLUS</h2>
+                                <p>R$ 99,90/mês</p>
+                            </div>
+                
+                            <ul type="none">
+                                <li>Musculação</li>
+                                <li>Aeróbico</li>
+                                <li>Ciclismo</li>
+                                <li>Aulas de Dança/Zumba</li>
+                                <li>Kit treino</li>
+                            </ul>
+                            
+                            <button>Adquirir</button>
+                        </div>    
+                </section>    
+                <section class="container-card">
+                        <img src="./src/img/imgBox-3.png" alt="homem batendo corda">
             
-                        <ul type="none">
-                            <li>Musculação</li>
-                            <li>Aeróbico</li>
-                            <li>Ciclismo</li>
-                            <li>Kit treino</li>
-                        </ul>     
-                        <button>Adquirir</button>
-                    </div>
-            </section>    
-            <section class="container-card">
-                    <img src="./src/img/imgBox-2.png" alt="homem batendo corda">
+                        <div class="container-card-text">
 
-                    <div class="container-card-text">
-
-                        <div>
-                            <h2>PLUS</h2>
-                            <p>R$ 99,90/mês</p>
+                            <div>
+                                <h2>PRO</h2>
+                                <p>R$ 149,90/mês</p>
+                            </div>
+                
+                            <ul type="none">
+                                <li>Musculação</li>
+                                <li>Aeróbico</li>
+                                <li>Ciclismo</li>
+                                <li>Aulas de Dança/Zumba</li>
+                                <li>Nutricionista</li>
+                                <li>Treinos personalizados</li>
+                                <li>Kit treino</li>
+                            </ul>    
+                            <button id="butoonThree">Adquirir</button>
                         </div>
-            
-                        <ul type="none">
-                            <li>Musculação</li>
-                            <li>Aeróbico</li>
-                            <li>Ciclismo</li>
-                            <li>Aulas de Dança/Zumba</li>
-                            <li>Kit treino</li>
-                        </ul>
-                        
-                        <button>Adquirir</button>
-                    </div>    
-            </section>    
-            <section class="container-card">
-                    <img src="./src/img/imgBox-3.png" alt="homem batendo corda">
-        
-                    <div class="container-card-text">
-
-                        <div>
-                            <h2>PRO</h2>
-                            <p>R$ 149,90/mês</p>
-                        </div>
-            
-                        <ul type="none">
-                            <li>Musculação</li>
-                            <li>Aeróbico</li>
-                            <li>Ciclismo</li>
-                            <li>Aulas de Dança/Zumba</li>
-                            <li>Nutricionista</li>
-                            <li>Treinos personalizados</li>
-                            <li>Kit treino</li>
-                        </ul>    
-                        <button id="butoonThree">Adquirir</button>
-                    </div>
-            </section>    
+                </section>    
+            </div>
         </div>
+
         
         <footer>
             <div>
