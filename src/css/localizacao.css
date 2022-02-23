@@ -27,14 +27,15 @@
     border: 2px solid rgba(0, 0, 0, 0.56);;
     height: 40px;
     border-radius: 8px;
-    padding: 20px ;
+    padding: 20px;
+    margin-top: -3%;
 }
 
 #mensagem{
     border: 2px solid rgba(0, 0, 0, 0.56);;
     border-radius: 8px;
     resize: none;
-    padding: 20px ;
+    padding: 20px;
 }
 
 button{
@@ -51,4 +52,8 @@ button{
 
 button:hover{
     transform: scale(1.1);
+}
+
+::placeholder{font-size: large;
+
 }
